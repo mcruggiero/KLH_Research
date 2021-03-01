@@ -1,0 +1,78 @@
+\documentclass[a4paper]{article}
+
+\usepackage{fullpage} 
+\usepackage{parskip} 
+\usepackage{tikz} 
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{pdfpages}
+\usepackage{xcolor,colortbl}
+\usepackage{xfrac}
+\usepackage{setspace} %remove before sending
+
+\usetikzlibrary{arrows,shapes,positioning}
+\usetikzlibrary{decorations.markings}
+\tikzstyle arrowstyle=[scale=1]
+\tikzstyle directed=[postaction={decorate,decoration={markings,
+    mark=at position .65 with {\arrow[arrowstyle]{stealth}}}}]
+\tikzstyle reverse directed=[postaction={decorate,decoration={markings,
+    mark=at position .65 with {\arrowreversed[arrowstyle]{stealth};}}}]
+
+\usepackage{biblatex}
+\addbibresource{bibliography.bib} 
+
+\title{RBIF-120: Searching for a KLH replacement}
+\author{Michael Ruggiero}
+\date{2021-02-28}
+\renewcommand{\figurename}{Figure} 
+
+% Remove before sending
+\doublespacing
+\begin{document}
+
+\maketitle
+\clearpage
+
+\section{Abstract}
+Should I add this?
+\section{Introduction}
+Hemocyanin is the copper-containing, main oxygen carrying protein commonly used in the blood of arthropods, mollusks, and some other invertebrates. Hemocyanin is of interest in biomedical research because of its use as an adjuvant in vaccine development, where it elicits an immunre response to haptens through convalent conjugation. Unfortunately, current production of hemocyanin as an adjuvant is extremely expensive with the harvesting process requiring blood from the limpet \emph{Megathura crenulata}. Key-Hole Limpet hemocyanin (KLH) is challenging to produce with recombinant techniques due to the large size of the protein. The cost of extraction ranges between five thousand to one hundred and fifty thousand dollars per gram of KLH.   \\\\
+Due to the increased demand, vaccine adjuvants may present as a bottleneck for future vaccine development. Recombinant KLH that has been produced with E. coli, however, is not used for general medical practice due to unsuitable purity. While the structure of KLH has been resolved to 9\AA , with its functional unit resolved to 4\AA, potential alternative hemocyanin sources to this protein have not been determined with imaging techniques such as Cryo-EM or X-ray crystallography. \\\\
+The goal of this work will be two-fold.  First, this work aims to understand the significance of adjuvants in relation to KLH, exploring the properties of its medicinal use and trade-offs to alternative conjugate protein adjuvants. Second, this work aims to explore the structure of KLH using computational and bioinformatic techniques in conjunction with analysis found in literature, highlighting potential alternatives to this important protein. 
+
+\section{A review of hapten conjugate protein adjuvants}
+\subsection{Adjuvant: A broad definition}
+Since adjuvants were discovered over 100 years ago, numerous substances have been compounded with vaccines in the hopes of an increased immunological response. Derived from the Latin word \emph{adjuvare}, which means "to help"\cite{pmid9139482}, scientists reached for the word "adjuvant" based on its ability to improve the impact of vaccines considering no mechanism of action was understood at the time. Aluminum salts have been successfully deployed in vaccines for decades\cite{pmid27274998}. Other adjuvants are entering into clinical use, such as the nano oil based mRNA formulations used in COVID-19 vaccinations\cite{pmid33034449}. \\\\ Nevertheless, the mechanisms of action for aluminum vs mRNA are drastically different. Thus, a consistent criteria for classification is important as we compare the efficacy of different adjuvants. In all cases, however, an idea antigen meets five interrelated standards\cite{pmid24833186}: 
+
+\begin{enumerate}
+    \item \textbf{Pure}: A chemically consistent adjuvant can be isolated.
+    \item \textbf{Harmless}: The adjuvant has few (or no) negative side effects.
+    \item \textbf{Universal}: A common immunogenic response is present in all exposed sub-populations.
+    \item \textbf{Targeted}: The adjuvant promotes no cross reacting antibodies. 
+    \item \textbf{Predictable}: Variable exposure produces a measurable response, capable of immunomodulation.
+\end{enumerate}
+
+With these standards in mind, only hapten conjugate protein adjuvants will be discussed to maintain a tighter, more specific comparison of adjuvant efficacy. 
+\subsection{Hapten conjugate protein adjuvants}
+Broadly speaking, haptens are small antigens that elicit a weak response when presented to the immune system\cite{pmid30275080}. One method to amplify the  immonogenic response of a hapten is to covalently attach it to a large, immunologically active protein. 
+\section{Hemocyanins as adjuvants}
+\subsection{Relevant Studies and Trails}
+\subsection{Proposed mechanism for KLH}
+\subsection{Advantages to KLH}
+\section{Hypothesis}
+If there are situations where KLH is a highly successful model adjuvant, then is it theoretically possible that similar immunological activity could be achieved when KLH is substituted by less expensive hemocyanin alternatives?
+\subsection{Arguments in favor}
+\section{Understanding KLH}
+\subsection{Structure}
+\subsection{Phylogenetics}
+\subsection{kmer protein analysis}
+\section{Candidates}
+
+\section{Homology Modeling}
+\subsection{trRosetta}
+\subsection{Robetta}
+\subsection{Pytorch/Alphafold clone}
+
+\section{Conclusion}
+\printbibliography[]
+\end{document}
